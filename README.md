@@ -1,74 +1,99 @@
-# 2048-Qt
+# 🎮 Qt 2048 Game  
 
-A clone of [2048](https://github.com/gabrielecirulli/2048), implemented in Qt.
+A **Qt-based** implementation of the **classic 2048 puzzle game**! Built with **C++ and Qt**, featuring smooth animations, a clean UI, and customizable grid sizes.  
 
-## Features
+![Qt](https://img.shields.io/badge/Qt-6-green) ![C++](https://img.shields.io/badge/Language-C++-blue) ![Game](https://img.shields.io/badge/Type-Puzzle-orange)  
+![GitHub stars](https://img.shields.io/github/stars/kamidev628/qt_2048_game?style=social) ![GitHub forks](https://img.shields.io/github/forks/kamidev628/qt_2048_game?style=social)  
 
-- Cross platform  
-  Currently tested on Windows and Linux. Should be able to run on Mac OS X or even Android and iOS.
-- Shipped with multiple variants
-  - 2048
-  - Degree (学位)
-  - Military Rank (军衔)
-  - PRC (天朝)
-- Multi-language support, currently
-  - English
-  - French (by [Rémi Verschelde](https://github.com/akien-mga))
-  - German (by [Jens John](https://github.com/2ion))
-  - Polish (by [Michał Radwański](https://github.com/enedil))
-  - Russian (by [Sergey Basalaev](https://github.com/SBasalaev))
-  - Simplified Chinese
+---
 
-## Screenshots
+## 🖼 Preview  
 
-- Classical 2048
-  ![Screenshot of Classical 2048](http://i1171.photobucket.com/albums/r546/xiaoyong/2048_zps8b4bad15.png)
+![Game Screenshot](https://raw.githubusercontent.com/kamidev628/qt_2048_game/main/screenshots/gameplay.png)  
 
-- 2048 Degree
-  ![Screenshot of 2048 Degree](http://i1171.photobucket.com/albums/r546/xiaoyong/2048_degree_zpsb142af1f.png)
+🎥 **[Watch Gameplay Demo](https://github.com/kamidev628/qt_2048_game/assets/demo.mp4)**  
 
-## Downloads
+---
 
-Check https://github.com/xiaoyong/2048-Qt/releases for compiled binary executable files. 
+## ✨ Features  
 
-### Windows
+✅ **Classic 2048 Gameplay** – Swipe to merge tiles and reach 2048!  
+✅ **Smooth Animations** – Uses Qt's animation framework for a polished feel  
+✅ **Undo Feature** – Mistake? Undo your last move  
+✅ **Custom Grid Sizes** – Play on 3×3, 4×4, or even larger grids  
+✅ **Keyboard & Touch Support** – Works on desktop and touchscreens  
 
-All required Qt libraries have been packed into one .exe file. So it should work out of the box.
+---
 
-### Linux
+## 🚀 Installation & Build  
 
-The Qt libraries (version >= 5.2.1) are required. Make sure that they are installed on your system.
+### 1️⃣ Prerequisites  
+Ensure you have:  
+- **Qt 6+** installed  
+- A **C++ compiler** (GCC, MSVC, Clang, etc.)  
 
-### Arch Linux
-
-Install the AUR package [2048-qt](https://aur.archlinux.org/packages/2048-qt/) through:
-```
-yaourt 2048-qt
-```
-And please vote it if you like it.
-
-### Debian
-
-[Alejandro Garrido Mota](https://github.com/mogaal) has packaged it for Debian. On Debian unstable, install it through:
-```
-sudo apt-get install 2048-qt
+### 2️⃣ Clone & Build  
+```sh
+git clone https://github.com/kamidev628/qt_2048_game.git
+cd qt_2048_game
+mkdir build && cd build
+cmake ..
+make
+./qt_2048_game  # Run the game!
 ```
 
-### Gentoo
-2048-Qt is available from the overlay maintained by [Jorge Pizarro Callejas](https://github.com/jorgicio):
-```
-layman -a jorgicio
-emerge 2048-qt
-```
+---
 
-### Ubuntu
+## 🎮 Controls  
 
-From Ubuntu 14.10 on, install it through:
-```
-sudo apt-get install 2048-qt
-```
+| Action       | Keyboard  | Mouse/Touch |
+|-------------|----------|-------------|
+| Move Up     | ↑ Arrow / W | Swipe Up |
+| Move Down   | ↓ Arrow / S | Swipe Down |
+| Move Left   | ← Arrow / A | Swipe Left |
+| Move Right  | → Arrow / D | Swipe Right |
+| Undo Move   | U | Button in UI |
 
-## Todo
+---
 
-- Allow the user to add his own label systems
-- AI support
+## 🔥 How to Play  
+
+1️⃣ **Swipe** (or use arrow keys) to move tiles.  
+2️⃣ **Merge** tiles of the same number to double their value.  
+3️⃣ **Reach 2048** to win, but you can keep going for a high score!  
+
+---
+
+## 🚀 Roadmap  
+
+- [ ] Add **dark mode** support  
+- [ ] Implement **AI solver** for automatic gameplay  
+- [ ] Support for **custom themes**  
+- [ ] Online **leaderboard integration**  
+
+---
+
+## 🤝 Contributing  
+
+Want to improve this game? Contributions are welcome!  
+
+1. **Fork** the repository  
+2. **Clone** your fork  
+3. Create a new **feature branch**  
+4. Submit a **Pull Request** 🎉  
+
+For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.  
+
+---
+
+## ⭐ Support  
+
+If you enjoy this project, please **⭐ Star** the repository and share it!  
+
+📧 **Contact:** marcin.nowak.0628@proton.me
